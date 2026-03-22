@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prakhar Chaurasiya</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="progress" id="progress"></div>
+
+<nav>
+<h2>PC</h2>
+<div>
+<a href="#home">Home</a>
+<a href="#edu">Education</a>
+<a href="#ach">Achievements</a>
+<a href="#skills">Skills</a>
+<a href="#exp">Experience</a>
+<a href="#hobby">Hobbies</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div>
+<div class="logo">PC</div>
+
+<h1>Prakhar Chaurasiya</h1>
+
+<p class="subtitle">
+BBA Student at IIM Bangalore <span>|</span> Finance Enthusiast <span>|</span> McKinsey Forward Program
+</p>
+
+<p class="contact">
+📞 9044896162 <span>|</span> ✉️ prakharchaurasiyaus@gmail.com
+</p>
+
+<div class="stats">
+<div class="stat-card"><h2>AIR 7</h2><p>NFAT 2025</p></div>
+<div class="stat-card"><h2>18%</h2><p>Scholarship</p></div>
+<div class="stat-card"><h2>IIM-B</h2><p>BBA DBE '28</p></div>
+<div class="stat-card"><h2>93.4%</h2><p>Class 10th</p></div>
+</div>
+</div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="ach" class="fade">
+<div class="section-title"><h2>Achievements</h2></div>
+<div class="grid">
+
+<div class="card orange">
+<h3>AIR 7 – NFAT 2025</h3>
+<p>Secured AIR 7 in NFAT 2025 showcasing exceptional analytical ability and consistency in high-pressure national level exams.</p>
+</div>
+
+<div class="card blue">
+<h3>AIR 24 – NFAT 2024</h3>
+<p>Achieved AIR 24 in NFAT 2024, proving strong academic consistency and competitive excellence.</p>
+</div>
+
+<div class="card green">
+<h3>IIM Jammu IPM Conversion</h3>
+<p>Received offer for prestigious IPM 2025–30 program, reflecting strong management aptitude.</p>
+</div>
+
+<div class="card purple">
+<h3>IIM Bangalore BBA DBE</h3>
+<p>Scored 34/60 and secured admission with 18% scholarship, demonstrating academic merit.</p>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="fade">
+<div class="section-title"><h2>Skills & Expertise</h2></div>
+
+<div class="grid">
+
+<div class="card blue">
+<h3>Finance & Business</h3>
+<div class="skill">Financial Derivatives<div class="bar"><div class="fill" style="width:75%"></div></div></div>
+<div class="skill">Business Strategy<div class="bar"><div class="fill" style="width:70%"></div></div></div>
+<p>Strong understanding of finance concepts and strategic thinking.</p>
+</div>
+
+<div class="card green">
+<h3>Certifications & Learning</h3>
+<p>Completed McKinsey Forward Program 2025.</p>
+<p>Pursuing NISM Series 8 & 15.</p>
+<p>Learning French language.</p>
+</div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="exp" class="fade">
+<div class="section-title"><h2>Experience</h2></div>
+<div class="grid">
+
+<div class="card orange">
+<h3>NOVA 2025 Pitch Tank</h3>
+<p>Runner-up in Shark Tank style competition; contributed to idea building and presentation strategy.</p>
+</div>
+
+<div class="card blue">
+<h3>Head Judge</h3>
+<p>Led school science fair, managing judging and coordination.</p>
+</div>
+
+<div class="card green">
+<h3>Solar Car Project</h3>
+<p>Built solar powered car demonstrating innovation and technical application.</p>
+</div>
+
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="edu" class="fade">
+<div class="section-title"><h2>Education</h2></div>
+<div class="timeline">
+
+<div class="timeline-item left card blue">
+<h3>IIM Bangalore</h3>
+<p>BBA DBE (2025–28), 18% scholarship</p>
+</div>
+
+<div class="timeline-item right card green">
+<h3>Class 12</h3>
+<p>CBSE – 79.2% (2023)</p>
+</div>
+
+<div class="timeline-item left card purple">
+<h3>Class 10</h3>
+<p>CBSE – 93.4% (2021)</p>
+</div>
+
+</div>
+</section>
+
+<!-- HOBBIES -->
+<section id="hobby" class="fade">
+<div class="section-title"><h2>Hobbies</h2></div>
+<div class="grid">
+
+<div class="card blue"><p> <h3>Badminton and football</h3> 🏸 Regularly play badminton and football, developing discipline, teamwork, and competitive mindset.</p></div>
+<div class="card green"><p> <h3>Reading non-fiction books</h3> 📚 Passionate about reading non-fiction books, especially in finance, business strategy, and self-development.</p></div>
+<div class="card purple"><p> <h3>Designing & Drawing</h3> 🎨 Enjoy designing and drawing, exploring creativity through visual expression and digital tools.</p></div>
+<div class="card orange"><p> <h3>Learning languages</h3> 🌍 Actively learning new languages like French to expand cultural understanding and communication skills.</p></div>
+
+</div>
+</section>
+
+<footer>© 2026 Akhand Pratap || All Rights Reserved.</footer>
+
+<script>
+document.querySelectorAll('nav a').forEach(a=>{
+a.onclick=e=>{
+e.preventDefault();
+document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+}
+});
+
+const f=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+f.forEach(el=>{
+if(el.getBoundingClientRect().top<window.innerHeight-50){
+el.classList.add('show');
+}
+});
+});
+
+window.onscroll=()=>{
+let s=document.documentElement.scrollTop;
+let h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+document.getElementById("progress").style.width=(s/h)*100+"%";
+}
+</script>
+
+</body>
+</html>
